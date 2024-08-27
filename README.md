@@ -1,2 +1,2 @@
-#Lista de compra
-###Projeto feito em HTML, CSS e JavaScript
+# Lista de compra#
+### Projeto feito em HTML, CSS e JavaScript
