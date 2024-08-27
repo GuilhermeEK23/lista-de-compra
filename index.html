@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Lista de compra</h1>
+        <nav>
+            <button onclick="createList()">Criar uma nova lista</button>
+            <button>Ver listas já criadas</button>
+        </nav>
+    </header>
+    <main>
+        <div id="create">
+            <div id="group">
+                <h2>Criar grupo para a lista</h2>
+                <div>
+                    <span class="input">
+                        <label for="nameGroup">Grupo</label>
+                        <input type="text" name="nameGroup" id="nameGroup" placeholder="nome do grupo">
+                    </span>
+                    <button onclick="insertGroup()">Adicionar</button>
+                </div>
+            </div>
+            <div id="product">
+                <h2>Adicionar produto a lista</h2>
+                <div>
+                    <span class="input">
+                        <label for="nameProduct">Produto</label>
+                        <input type="text" name="nameProduct" id="nameProduct" placeholder="nome do produto">
+                    </span>
+                    <span class="input">
+                        <label for="groups">Grupo</label>
+                        <select name="groups" id="groups">
+                            <option value="default">Escolha um grupo</option>
+                        </select>
+                    </span>
+                    <button onclick="insertProduct()">Adicionar</button>
+                </div>
+            </div>
+        </div>
+        <div id="view">
+            <button>Salvar lista</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
